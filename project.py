@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-ratings_data = pd.read_csv("F:\Datasets\ml-latest-small\\ratings.csv")
+ratings_data = pd.read_csv("ratings.csv")
 ratings_data.head()
-movie_names = pd.read_csv("F:\Datasets\ml-latest-small\\movies.csv")
+movie_names = pd.read_csv("movies.csv")
 movie_names.head()
 movie_data = pd.merge(ratings_data, movie_names, on='movieId')
 movie_data.head()
